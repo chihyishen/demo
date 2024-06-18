@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    driver-class-name: org.postgresql.Driver   
+    url: jdbc:postgresql:///${DB_NAME}    
+    username: ${DB_USERNAME}    
+    password: ${DB_PASSWORD}    
+    hikari:      
+      data-source-properties:        
+        socketFactory: com.google.cloud.sql.postgres.SocketFactory        
+        cloudSqlInstance: ${INSTANCE_NAME}
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+springdoc: 
+  api-docs:
+    enabled: true 
+    path: /api-docs
+  swagger-ui:
+    enabled: true 
+    path: /swagger.html
+
+server:
+  port: 8080
+  forward-headers-strategy: framework 
