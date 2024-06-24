@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 @RequestMapping("/emp")
 @Tag(name = "Member Api")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class TestController 
 {
   @Autowired

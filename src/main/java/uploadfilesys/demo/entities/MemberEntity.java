@@ -22,6 +22,7 @@ public class MemberEntity
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Schema(name = "會員編號",description = "會員編號")
+    @Column(columnDefinition = "BIGINT")
     BigInteger memberId;
 
     @Column
