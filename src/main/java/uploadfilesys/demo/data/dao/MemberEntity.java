@@ -1,4 +1,4 @@
-package uploadfilesys.demo.entities;
+package uploadfilesys.demo.data.dao;
 
 import java.math.BigInteger;
 

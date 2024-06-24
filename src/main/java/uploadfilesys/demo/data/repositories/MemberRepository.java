@@ -1,11 +1,11 @@
-package uploadfilesys.demo.repositories;
+package uploadfilesys.demo.data.repositories;
 
 import java.math.BigInteger;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import uploadfilesys.demo.entities.MemberEntity;
+import uploadfilesys.demo.data.dao.MemberEntity;
 
 
 @Repository

@@ -1,4 +1,4 @@
-package uploadfilesys.demo.servies;
+package uploadfilesys.demo.services.member;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -7,10 +7,9 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import uploadfilesys.demo.data.repositories.*;
+import uploadfilesys.demo.data.dao.*;
 import uploadfilesys.demo.models.MemberModel;
-import uploadfilesys.demo.repositories.MemberRepository;
-import uploadfilesys.demo.entities.MemberEntity;
-import uploadfilesys.demo.interfaces.MemberInterface;
 
 @Service
 public class MemberService implements MemberInterface

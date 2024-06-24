@@ -18,6 +18,12 @@ spring:
       ddl-auto: update
     show-sql: true
 
+  cloud:
+    gcp:
+      storage:
+        bucket: pictureupload
+
+
 springdoc: 
   api-docs:
     enabled: true 

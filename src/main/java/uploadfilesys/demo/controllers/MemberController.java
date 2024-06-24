@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import uploadfilesys.demo.models.MemberModel;
-import uploadfilesys.demo.servies.MemberService;
+import uploadfilesys.demo.services.member.MemberService;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/emp")
 @Tag(name = "Member Api")
 @CrossOrigin(origins = "*")
-public class TestController 
+public class MemberController 
 {
   @Autowired
   private MemberService memberService;

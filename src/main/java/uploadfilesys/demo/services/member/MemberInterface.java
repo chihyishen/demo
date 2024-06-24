@@ -1,4 +1,4 @@
-package uploadfilesys.demo.interfaces;
+package uploadfilesys.demo.services.member;
 
 import java.math.BigInteger;
 import java.util.List;
